@@ -1,0 +1,28 @@
+body{
+	background-color: #F4F4F4;
+	font-size: 14px;
+}
+.subject{
+	margin: 35px auto;
+	width: 1200px;
+}
+a.fh{
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+}
+a.az{
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	line-height: 25px;
+}

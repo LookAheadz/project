@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 300px;
+			height: 200px;
+			margin: 0 auto;
+			border: 2px solid #333;
+			background-color: #e6e6e6;
+		}
+		.top{
+			height: 25px;
+			background: skyblue;
+		}
+		.left{
+			float: left;
+		}
+		#Middle{
+			float: left;
+			padding-left: 17px;
+		}
+		.right{
+			float: right;
+		}
+		table{
+			width: 100%;
+		}
+		button{
+			line-height: 19px;
+		}
+		td,th{
+			padding: 0 9px;
+			text-align: center;
+		}
+		.ys{
+			background: blue;
+			color: #fff;
+		}
+	</style>
+	<script type="text/javascript" src="lol/script/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var rl = new Date();
+			var aa = 0;
+			var year = rl.getFullYear()  							//获取年数
+			var month = rl.getMonth()+1;							//获取月数
+			var day = rl.getDate();      							//获取当前天数
+			var week = rl.getDay();		 							//获取星期
+			var num = new Date(year,month,0).getDate()				//获取当月天数
+			var week1 = new	Date(year,month-1,1).getDay();			//获取当月第一天是星期几	
+			$(".year").html(year+"年")
+			$(".month").html(month+"月")
+			$(".left_left").click(function(){
+				$("tbody").html(""); 
+				year--;
+				aa = 0;
+				var num1 = new Date(year,month,0).getDate()				//获取当月天数
+				var week2 = new	Date(year,month-1,1).getDay();
+				$(".year").html(year+"年");
+				for(var j=0;j<week2-1;j++){
+					$("tbody").append("<td>"+' '+"</td>")
+				}
+				for(var i=1;i<=num1;i++){
+					aa++;
+					$("tbody").append("<td>"+i+"</td>")
+					if((aa+j)%7 == 0){
+						$("tbody").append("<tr></tr>")
+					}
+					if(year == new Date().getFullYear()){
+						if($("td").length-j == day){
+						$("td:last").addClass('ys')
+						}
+					}
+				}
+			})
+			$(".left_right").click(function(){
+				$("tbody").html("");
+				year++;
+				var num1 = new Date(year,month,0).getDate()				//获取当月天数
+				var week2 = new	Date(year,month-1,1).getDay();
+				var aa = 0;
+				$(".year").html(year+"年");
+				for(var j=0;j<week2-1;j++){
+					$("tbody").append("<td>"+' '+"</td>")
+				}
+				for(var i=1;i<=num1;i++){
+					aa++;
+					$("tbody").append("<td>"+i+"</td>")
+					if((aa+j)%7 == 0){
+						$("tbody").append("<tr></tr>")
+					}
+					if(year == new Date().getFullYear()){
+						if($("td").length-j == day){
+						$("td:last").addClass('ys')
+						}
+					}
+				}
+			})
+			$(".right_left").click(function(){
+				$("tbody").html("");
+				month--;
+				var aa = 0;
+				var s = 6;
+				var num1 = new Date(year,month,0).getDate()				//获取当月天数
+				var week2 = new	Date(year,month-1,1).getDay();
+				if(month+1 == 1){
+					month = 12;
+					year--;
+					$(".year").html(year+"年")
+				}
+				$(".month").html(month+"月")
+				for(var j=0;j<week2-1;j++){
+					$("tbody").append("<td>"+' '+"</td>")
+				}
+				for(var i=1;i<=num1;i++){
+					aa++;
+					$("tbody").append("<td>"+i+"</td>")
+					if((aa+j)%7 == 0){
+						$("tbody").append("<tr></tr>")
+					}
+					if(year == new Date().getFullYear() && month == new Date().getMonth()+1){
+						if($("td").length-j == day){
+						$("td:last").addClass('ys')
+						}
+					}
+				}
+			});
+			$(".right_right").click(function(){
+				$("tbody").html("");
+				month++;
+				var aa = 0;
+				var num1 = new Date(year,month,0).getDate()				//获取当月天数
+				var week2 = new	Date(year,month-1,1).getDay();
+				if(month-1==12){
+					month = 1;
+					year++;
+					$(".year").html(year+"年")
+				}
+				$(".month").html(month+"月")
+				for(var j=0;j<week2-1;j++){
+					$("tbody").append("<td>"+' '+"</td>")
+				}
+				for(var i=1;i<=num1;i++){
+					aa++;
+					$("tbody").append("<td>"+i+"</td>")
+					if((aa+j)%7 == 0){
+						$("tbody").append("<tr></tr>")
+					}
+					if(year == new Date().getFullYear() && month == new Date().getMonth()+1){
+						if($("td").length-j == day){
+						$("td:last").addClass('ys')
+						}
+					}
+				}
+			});	
+			for(var j=0;j<week1-1;j++){
+				$("tbody").append("<td>"+' '+"</td>")
+			}
+			for(var i=1;i<=num;i++){
+				aa++;
+				$("tbody").append("<td>"+i+"</td>")
+				if((aa+j)%7 == 0){
+					$("tbody").append("<tr></tr>")
+				}
+				if($("td").length-j == day){
+					$("td:last").addClass('ys')
+				}
+			}
+		})
+	</script>
+	<script type="text/javascript">
+		function sta(){
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = chec(m);
+			s = chec(s);
+			document.getElementById('Middle').innerHTML=h+":"+m+":"+s
+			t = setTimeout('sta()',500)
+		}
+		function chec(i){
+			if(i<10){
+				i="0"+i;
+			}
+			return i
+		}
+	</script>
+</head>
+<body onload="sta()">
+	<div class="box">
+		<div class="top">
+			<div class="left">
+				<button type="button" class="left_left"><</button>
+				<span class="year"></span>
+				<button type="button" class="left_right">></button>
+			</div>
+			<div id="Middle"></div>
+			<div class="right">
+				<button type="button" class="right_left"><</button>
+				<span class="month"></span>
+				<button type="button" class="right_right">></button>
+			</div>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>一</th>
+					<th>二</th>
+					<th>三</th>
+					<th>四</th>
+					<th>五</th>
+					<th>六</th>
+					<th>日</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>	
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript">
+		var i = 0;
+		$(function(){
+			$(".hf").click(function(event){
+				event.stopPropagation()
+				$(".content").slideDown('slow');	 
+			});
+			$(".content").click(function(){
+				return false;
+			})
+			$(document).on('click',function(){
+				$(".content").slideUp('slow');
+			})
+			$(".gb").click(function(){
+				$(".content").slideUp('slow');
+			})
+		})
+		$(function(){
+			$(".war .tp a img").click(function(a){
+				var a =$(this).attr('src');
+				//debugger;
+				//var i =  a.replace(/[^0-9]/ig, "")
+				$(".box").css("background-image",'url('+a+')');
+				$(this).parent().siblings().addClass('xz')
+				$(this).parent().parent().siblings().children("div").removeClass('xz');
+			})
+		})
+		$(function(){
+			$("li").hover(function(){
+				$(this).children("a").addClass("bs").siblings('').removeClass("bs");
+			},function(){
+				$("li a").removeClass("bs");
+			})
+		})
+		$(function(){
+			$(".sz").click(function(index){
+				index.stopPropagation()
+				$(".pd").slideDown('fast');	 
+			});
+			$(".pd").click(function(){
+				return false;
+			})
+			$(document).on('click',function(){
+				$(".pd").slideUp('fast');
+			})
+		})
+		$(function(){
+			$(".dd").mouseenter(function(){
+				$(".gdcp").removeClass("hide");
+			})
+			$(".gdcp").mouseenter(function(){
+				$(".gdcp").removeClass("hide")
+			})
+			$(".gdcp").mouseleave(function(){
+				$(".gdcp").addClass("hide")
+			})
+		})
+		$(function(){
+			$(".loo").mouseenter(function(){
+				$(".xl1").removeClass("hide");
+			})
+			$(".xl1").mouseenter(function(){
+				$(".xl1").removeClass("hide");
+			})
+			$(".xl1").mouseleave(function(){
+				$(".xl1").addClass("hide");
+			})
+			$(".loo").mouseleave(function(){
+				$(".xl1").addClass("hide");
+			})
+		})
+		$(function(){
+			$xl2 = $(".xl2");
+			$(".sz_2").mouseenter(function(){
+				$xl2.removeClass("hide");
+			})
+			$xl2.mouseenter(function(){
+				$xl2.removeClass("hide");
+			})
+			$xl2.mouseleave(function(){
+				$xl2.addClass("hide");
+			})
+			$(".sz_2").mouseleave(function(){
+				$xl2.addClass("hide");
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div class="top">
+			<div class="nav clearfix">
+				<div class="left">
+					<span class="weather">
+						重庆：<img src="a2.png">
+						12℃ <span class="ys">中度</span>
+						152
+					</span>
+					<span class="sx">|</span>
+					<span class="cz">
+						<a href="javascript:;">宝箱</a>
+						<a href="javascript:;" class="hf">换肤</a>
+					<a href="javascript:;">消息</a>
+					</span>
+				</div>
+				<div class="right">
+					<a href="javascript:;" class="yb">糯米</a>
+					<a href="javascript:;" class="yb">新闻</a>
+					<a href="javascript:;" class="yb">hao123</a>
+					<a href="javascript:;" class="yb">地图</a>
+					<a href="javascript:;" class="yb">视频</a>
+					<a href="javascript:;" class="yb">贴吧</a>
+					<a href="javascript:;" class="yb loo">LookAhead</a>
+					<a href="javascript:;" class="yb sz_2">设置</a>
+					<a href="javascript:;" class="yb dd">更多产品</a>
+				</div>
+			</div>
+		</div>
+		<div class="content hide">
+			<div class="dh">
+				<ul class="dh1">
+					<li class="dh_1"><a href="javascript:;">热门</a></li>
+					<li class="dh_1 gl"><a href="javascript:;">游戏</a></li>
+					<li class="dh_1"><a href="javascript:;">卡通</a></li>
+					<li class="dh_1"><a href="javascript:;">女神降临</a></li>
+					<li class="dh_1"><a href="javascript:;">明星</a></li>
+					<li class="dh_1"><a href="javascript:;">风景</a></li>
+					<li class="dh_1"><a href="javascript:;">简约</a></li>
+					<div><i href="javascript:;"></i></div>
+					<li class="dh_1"><a href="javascript:;">自定义</a></li>
+					<li class="dh_1"><a href="javascript:;">最近使用</a></li>
+					<a href="javascript:;" class="gb">
+						<span class="jt"></span>
+						<span class="gb">收起</span>
+					</a>
+				</ul>
+			</div>
+			<div class="bg_hz">
+				<div class="war clearfix">
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/0.jpg"></a>
+					<div class="xz"></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/14.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/17.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/6.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/10.jpg"></a>
+					<div></div>
+				</div>
+				</div>
+				<div class="war clearfix hide">
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/11.jpg"></a>
+					<div class="xz"></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/12.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/13.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/14.jpg"></a>
+					<div></div>
+				</div>
+				</div>
+				<div class="war clearfix hide">
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/0.jpg"></a>
+					<div class="xz"></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/1.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/2.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/3.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/4.jpg"></a>
+					<div></div>
+				</div>
+				</div>
+				<div class="war clearfix hide">
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/15.jpg"></a>
+					<div class="xz"></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/16.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/17.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/18.jpg"></a>
+					<div></div>
+				</div>
+				</div>
+				<div class="war clearfix hide">
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/19.jpg"></a>
+					<div class="xz"></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/20.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/21.jpg"></a>
+					<div></div>
+				</div>
+				</div>
+				<div class="war clearfix hide">
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/5.jpg"></a>
+					<div class="xz"></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/6.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/7.jpg"></a>
+					<div></div>
+				</div>
+				</div>
+				<div class="war clearfix hide">
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/8.jpg"></a>
+					<div class="xz"></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/9.jpg"></a>
+					<div></div>
+				</div>
+				<div class="tp">
+					<a href="javascript:;" class="gh"><img src="img/10.jpg"></a>
+					<div></div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="zt">
+			<div class="logo"><img src="logo.png"></div>
+			<div class="input">
+				<input type="text" name=""><a href="javascript:;" class="xj"></a><a href="javascript:;" class="bd">百度一下</a>
+			</div>
+			<div class="nav_1">
+				<div class="nav_1_left">
+					<div class="nav_1_left_box">
+						<a href="javascript:;"><span class="zj"></span>我的关注</a>
+					</div>
+					<div class="nav_1_left_box">
+						<a href="javascript:;">视频</a>
+					</div>
+					<div class="nav_1_left_box tj">
+						<a href="javascript:;">推荐</a>
+					</div>
+					<div class="nav_1_left_box">
+						<a href="javascript:;">导航</a>
+					</div>
+					<div class="nav_1_left_box">
+						<a href="javascript:;">体育</a>
+					</div>
+				</div>
+				<div class="nav_1_right">
+					<a href="javascript:;" class="sz"></a>
+				</div>
+			</div>
+			<div class="pd hide">
+				<div class="pd_left">
+					<div class="dy">已订阅频道</div>
+					<div class="gz">我的关注</div>
+					<div class="pd_left_hz">
+						<a href="javascript:;" class="xx">音乐<span class="xx_1"></span></a>
+						<a href="javascript:;" class="xx">导航<span class="xx_1"></span></a>
+						<a href="javascript:;" class="xx">视频<span class="xx_1"></span></a>
+						<a href="javascript:;" class="xx">推荐<span class="xx_1"></span></a>
+					</div>
+				</div>
+				<div class="pd_right">
+					<div class="dy">未订阅频道</div>
+					<div class="pd_right_1 clearfix">
+						<a href="javascript:;" class="xx1">购物<span class="xx1_1"></span></a>
+						<a href="javascript:;" class="xx1">小说<span class="xx1_1"></span></a>
+						<a href="javascript:;" class="xx1">体育<span class="xx1_1"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="zt_nr clearfix">
+				<div class="zt_nr_left">
+					<div class="zt_nr_left_top">
+						<div class="x"></div>
+						<span class="zt_nr_wz"><span class="bd1"></span>以下信息根据您的兴趣推荐</span>
+						<div class="x"></div>
+					</div>
+					<div class="zt_nr_left_zt">
+						<div class="zt_nr_left_zt_1">
+							<a href="javascript:;" class="img1"><img src="img/1.jpeg"></a>
+							<div class="js">
+								<div class="js1">
+									<a href="www.baidu.com">“鬼鲨”首次在北半球被发现 出现在地球的时间比恐龙早</a>
+								</div>
+								<div class="js2">
+									<a href="javascript:;">品科技</a>
+									<span class="sj_1">12-22 12:25</span>
+									<span class="rd">热点</span>
+								</div>
+							</div>
+						</div>
+						<div class="zt_nr_left_zt_1">
+							<a href="javascript:;" class="img1"><img src="img/1.jpeg"></a>
+							<div class="js">
+								<div class="js1">
+									<a href="javascript:;">“鬼鲨”首次在北半球被发现 出现在地球的时间比恐龙早</a>
+								</div>
+								<div class="js2">
+									<a href="javascript:;">品科技</a>
+									<span class="sj_1">12-22 12:25</span>
+									<span class="rd">热点</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="zt_nr_left_zt hide">
+						<div class="zt_nr_left_zt_1">
+							<a href="javascript:;" class="img1"><img src="img/1.jpeg"></a>
+							<div class="js">
+								<div class="js1">
+									<a href="javascript:;">“鬼鲨”首次在北半球被发现 出现在地球的时间比恐龙早</a>
+								</div>
+								<div class="js2">
+									<a href="javascript:;">品科技</a>
+									<span class="sj_1">12-22 12:25</span>
+									<span class="rd">热点</span>
+								</div>
+							</div>
+						</div>
+						<div class="zt_nr_left_zt_1">
+							<a href="javascript:;" class="img1"><img src="img/1.jpeg"></a>
+							<div class="js">
+								<div class="js1">
+									<a href="javascript:;">“鬼鲨”首次在北半球被发现 出现在地球的时间比恐龙早</a>
+								</div>
+								<div class="js2">
+									<a href="javascript:;">品科技</a>
+									<span class="sj_1">12-22 12:25</span>
+									<span class="rd">热点</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="zt_nr_left_zt hide">
+						<div class="zt_nr_left_zt_1">
+							<a href="javascript:;" class="img1"><img src="img/1.jpeg"></a>
+							<div class="js">
+								<div class="js1">
+									<a href="javascript:;">“鬼鲨”首次在北半球被发现 出现在地球的时间比恐龙早</a>
+								</div>
+								<div class="js2">
+									<a href="javascript:;">品科技</a>
+									<span class="sj_1">12-22 12:25</span>
+									<span class="rd">热点</span>
+								</div>
+							</div>
+						</div>
+						<div class="zt_nr_left_zt_1">
+							<a href="javascript:;" class="img1"><img src="img/1.jpeg"></a>
+							<div class="js">
+								<div class="js1">
+									<a href="javascript:;">“鬼鲨”首次在北半球被发现 出现在地球的时间比恐龙早</a>
+								</div>
+								<div class="js2">
+									<a href="javascript:;">品科技</a>
+									<span class="sj_1">12-22 12:25</span>
+									<span class="rd">热点</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="zt_nr_right">
+					<div class="zt_nr_right_top clearfix">
+						<div class="zt_nr_right_top_left"><a href="javascript:;" class="ssrd">实时热点</a></div>
+						<div class="zt_nr_right_top_left"><a href="javascript:;" class="left1"><span class="y"></span>换一换</a></div>
+					</div>
+					<div class="zt_nr_right_zt">
+						<div class="ztnr clearfix">
+							<div class="nr1"><a href="javascript:;">e租宝案已受理</a></div>
+							<div class="nr1"><a href="javascript:;">明年养老金仍上调</a></div>
+							<div class="nr1"><a href="javascript:;">歼-31改后首飞</a></div>
+							<div class="nr1"><a href="javascript:;">贺岁纪念币发行</a></div>
+							<div class="nr1"><a href="javascript:;">上坟真车被烧走</a></div>
+							<div class="nr1"><a href="javascript:;">点燃男友家后被困</a></div>
+							<div class="nr1"><a href="javascript:;">陈敏之产子</a></div>
+							<div class="nr1"><a href="javascript:;">韩富二代袭击空姐</a></div>
+							<div class="nr1"><a href="javascript:;">路灯下裹被学习</a></div>
+							<div class="nr1"><a href="javascript:;">55岁哈林再当爸</a></div>
+							<div class="nr1"><a href="javascript:;">遇难地扮日本武士</a></div>
+							<div class="nr1"><a href="javascript:;">狠心母亲卖点女儿</a></div>
+							<div class="nr1"><a href="javascript:;">联大悼念卡斯特罗</a></div>
+							<div class="nr1"><a href="javascript:;">杜特尔特道歉</a></div>
+							<div class="nr1"><a href="javascript:;">潜规则考生遭拒</a></div>
+							<div class="nr1"><a href="javascript:;">机场检疫犬上岗</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gdck">
+				<div class="gdck_1"><a href="javascript:;">滚动查看更多</a></div>
+				<div class="xxjt"></div>
+			</div>
+		</div>
+		<div class="button">
+			<div>
+				<a href="javascript:;" class="sw">设为首页</a>
+				<span class="js_1">©2016 Baidu </span>
+				<a href="javascript:;" class="sy">使用百度前必读 意见反馈</a>
+				<span class="j">京ICP证030173号<span class="capy"></span></span>
+			</div>
+			<div class="button2">
+				<a href="javascript:;" class="icon"></a>
+				<a href="javascript:;">京公网11000002000001号</a>
+			</div>
+		</div>
+	</div>
+	<div class="xl1 hide">
+		<ul>
+			<li><a href="javascript:;">我的VIP</a></li>
+			<li><a href="javascript:;">个人中心</a></li>
+			<li><a href="javascript:;">账号设置</a></li>
+			<li><a href="javascript:;">意见反馈</a></li>
+			<li><a href="javascript:;">退出</a></li>
+		</ul>
+	</div>
+	<div class="xl2 hide">
+		<ul>
+			<li><a href="javascript:;">搜索设置</a></li>
+			<li><a href="javascript:;">高级搜索</a></li>
+			<li><a href="javascript:;">搜索历史</a></li>
+			<li><a href="javascript:;">意见反馈</a></li>
+		</ul>
+	</div>
+	<div class="gdcp hide">
+		<div class="gdcp_1"><span>更多产品</span></div>
+		<div class="hz">
+			<a href="javascript:;"><img src="music.png">音乐</a>
+		</div>
+		<div class="hz">
+			<a href="javascript:;"><img src="image.png">图片</a>
+		</div>
+		<div class="hz">
+			<a href="javascript:;"><img src="zhidao.png">知道</a>
+		</div>
+		<div class="hz">
+			<a href="javascript:;"><img src="wenku.png">文库</a>
+		</div>
+		<div class="hz">
+			<a href="javascript:;"><img src="bang.png">风云榜</a>
+		</div>
+		<div class="hz">
+			<a href="javascript:;"><img src="tuiguang.png">百度推广</a>
+		</div>
+		<div class="qbcp">
+			<a href="javascript:;">全部产品>></a>
+		</div>
+	</div>
+	<div class="hddb hide">
+		<span class="xsjt"></span>
+		<a href="javascript:" class="hide">回到顶部</a>
+	</div>
+	<div class="bj hide"></div>
+</body>
+</html>

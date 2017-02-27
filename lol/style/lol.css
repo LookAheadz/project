@@ -1,0 +1,491 @@
+#box {
+	height: 698px;
+	width: 1384px;
+	margin: 0 auto;
+	font: normal 12px/1.6 Tahoma,"simsun","Microsoft Yahei";
+	background:#050708 url(../images/box.jpg) no-repeat 0 0;
+}
+.clearfix {*zoom:1}
+.clearfix:after,.clearfix:before {
+ content: "";
+display: table
+}
+.clearfix:after {
+clear: both
+}
+a {
+	cursor: pointer;
+	color: #76c0ca;
+}
+a:hover {
+	color:#b5f6ff; text-decoration:underline
+}
+.num a:hover {
+	text-decoration: none;
+}
+.qh .zy a:hover {
+	text-decoration: none;
+}
+li a.gf:hover {
+	text-decoration: none;
+}
+.spr {
+	display: block;
+	background: url(../images/xkj.png) no-repeat;
+}
+#left .conent {
+	height: 279px;
+	padding-top: 32px;
+	position: relative;
+	padding-left: 600px;
+	/* background: rebeccapurple; */
+}
+.list {
+	width: 175px;
+	height: 81px;
+	padding-top: 34px;
+	background-position: -53px -148px;
+	position: relative;
+	left: 21px;
+	bottom: -8px;
+	margin-left: 6px;
+	cursor: pointer;
+	display: inline-block;
+	*zoom:1;
+	*display: inline;
+}
+.t1n {
+	background-position: -45px -4px;
+}
+.t2n {
+	background-position: -45px -34px;
+}
+.t3n {
+	background-position: -45px -64px;
+}
+.t4n {
+	background-position: -45px -94px;
+}
+.t5n {
+	background-position: -45px -124px;
+}
+.name {
+	width: 118px;
+	height: 20px;
+	position: absolute;
+	left: 42px;
+	top: 55px;
+	z-index: 10;
+}
+.solo {
+	position: absolute;
+	height: 20px;
+	width: 80px;
+	right: 51px;
+	top:73px;
+	z-index: 10;
+}
+.top .list .smoke{
+	position: absolute;
+	bottom: 10px;
+	left: 11px;
+	width:160px;
+	height: 40px;
+	background:url("../images/smoke.png") no-repeat 0 0 transparent;
+	-webkit-mask:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)));
+	z-index: 1;
+}
+.t1s {
+	background-position: -181px 6px;
+}
+.t2s {
+	background-position: -181px -13px;
+}
+.t3s {
+	background-position: -181px -33px;
+}
+.t4s {
+	background-position: -181px -53px;
+}
+.t5s {
+	background-position: -181px -73px;
+}
+.tx {
+	position: absolute;
+	left: 4px;
+	top: 55px;
+	height: 46px;
+	width: 40px;
+	z-index: 10;
+}
+.b1k {
+	background-position: 11px 1px;
+}
+.b2k {
+	background-position: 8px -40px;
+}
+.b3k {
+	background-position: 10px -80px;
+}
+.b4k {
+	background-position: 10px -120px;
+}
+.b5k {
+	background-position: 8px -160px;
+}
+.wz {
+	position: absolute;
+	left: 26px;
+	top: 1px;
+	height: 32px;
+	width: 136px;
+}
+.dj1 {
+	background-position: -270px -340px;
+}
+.dj2 {
+	background-position: -270px -340px;
+}
+.dj3 {
+	background-position: -140px -340px;
+}
+.dj4 {
+	background-position: -4px -340px;
+}
+.dj5 {
+	background-position: -4px -340px;
+}
+#left {
+	width: 956px;
+	float: left;
+}
+#left .conent .lb .img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#left .conent .lb .item {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#left .conent .lb .num {
+	color: #267280;
+	text-align: center;
+	background-color: rgba(0,0,0,0.9);
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.num1 {
+	width: 112px;
+	height: 34px;
+	line-height: 34px;
+	float: left;
+}
+#left .conent .lb .num a.on {
+	background-color: #07414a;
+	color: #fff;
+	font-weight: 700;
+}
+.qh {
+	position: relative;
+}
+.zy {overflow: hidden;}
+.qh .zy .zh {
+	width: 70px;
+	height: 34px;
+	font-size: 14px;
+	color: #5bb8cc;
+	font-weight: 700;
+	text-align: center;
+	float: left;
+	line-height: 34px;
+}
+.qh .zy .xg {
+	background-position: -275px 10px;
+	color: #fff;
+}
+.jh {
+	display: inline-block;
+	width: 20px; height: 20px;
+	background-position: -291px -263px;
+	position: absolute;
+	right: -57px;
+	top: 7px;
+}
+.zy1 {
+	height: 188px;
+	overflow: hidden;
+	margin-top: 17px;
+}
+.yx {
+	display: inline-block;
+	width: 346px;
+	height: 44px;
+	text-align: center;
+	font-weight: 700;
+	color: #fff;
+	font-size: 14px;
+}
+.wz3 {
+	display: inline-block;
+	width: 299px;
+	height: 28px;
+	color: #76c0ca;
+	background-position: -10px -494px;
+}
+.rq {
+	color: #214b57;
+}
+.zy3 {
+}
+.xx {
+	background-position: -344px -310px;
+	width: 16px;
+	height: 15px;
+	display: inline-block;
+	padding-left: 2px;
+}
+.yxlm {
+	display: inline-block;
+	width: 277px;
+	height: 28px;
+	color: #fff;
+}
+.bottom {
+	height: 200px;
+	padding-top: 26px;
+	position: relative;
+}
+.bottom .left {
+	width: 160px;
+	float: left;
+}
+.bottom .left ul {
+}
+.bottom .left ul li a.gf {
+	width: 140px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	background-position: -350px -81px;
+	margin-bottom: 8px;
+	position: relative;
+	left: 23px;
+}
+.bottom .left ul li .gf .new {
+	width: 30px;
+	height: 30px;
+	background-position: -423px -266px;
+	position: absolute;
+	top: -4px;
+	left: 104px;
+}
+.bottom .mid {
+	width: 412px;
+	float: left;
+	margin-left: 10px;
+}
+.mid .img ul li {
+	position: relative;
+}
+.bottom .mid .img ul li a img {
+	width: 100%;
+	height: 100%;
+}
+.bottom .mid .img ul li a .sbg {
+	display: none;
+	width: 70px;
+	height: 70px;
+	background-color: #07414e;
+	opacity: 0.9;
+}
+.sname {
+	display: none;
+	width: 68px;
+	padding-top: 26px;
+	background-position: -177px -91px;
+	text-align: center;
+	line-height: 43px;
+	color: #fff;
+	background-color: #07414e;
+	opacity: 0.9;
+}
+.sbg, .sname {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.fdj a:hover .sname {
+	display: block;
+}
+.bottom .mid  .ck {display: block;line-height: 21px;text-align: right;padding-right: 10px;}
+.mid .img ul li {
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	margin: 0 12px 10px 0;
+	float: left;
+}
+.mid .img ul li a:hover{
+	background-color: red;
+	background-position: 1px 1px;
+}
+.bottom .right .lb1 {
+	height: 196px;
+	position: relative;
+}
+.bottom .right {
+	width: 344px;
+	height: 188px;
+	float: left;
+	margin-left: 14px;
+}
+.bottom .right .lb1 .img1 .item {
+	position: absolute;
+	top: 0;
+}
+.bottom .right .num1 {
+	position: absolute;
+	right: 3px;
+	bottom: -3px;
+}
+.bottom .right .lb1 .num1 .xy {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../images/xkj.png) no-repeat -350px -263px;
+}
+.bottom .right .lb1 .num1 .ls {
+	background-position: -332px -263px;
+}
+.bottom .right .lb1 .img1 {
+	height: 193px;
+}
+.bottom .right .lb1 .zk {
+	background: url(../images/00.png )no-repeat -276px -498px;
+	width: 117px;
+	height: 28px;
+	position: absolute;
+	right: -3px;
+	top: 1px;
+}
+#right {
+	width: 280px;
+	position: relative;
+	float: right;
+	padding-left: 2px;
+	left: -133px;
+}
+#right .top{
+	height: 120px;
+}
+#right .top .lb2{
+	width: 280px;
+	height: 80px;
+}
+#right .top .lb2 .img2 .item {
+	position: absolute;
+	top: 0;
+}
+#right .top .lb2 .num2 {
+	position: relative;
+	top: 56px;
+	left: 244px;
+}
+#right .top .lb2 .num2 .xy {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../images/xkj.png) no-repeat -350px -263px;
+}
+#right .top .lb2 .num2 .ls1 {
+	background-position: -332px -263px;
+}
+#right .top .sc {
+	width: 280px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	background-position: 0 -263px;
+}
+#right .conent {
+	height: 279px;
+	position: relative;
+	padding-top: 32px;
+}
+#right .conent .tp {
+	background: url(../images/sx.png);
+}
+.conent .lb3 {
+	position: absolute;
+	top: 15px;
+	width: 280px;
+	height: 130px;
+	overflow: hidden;
+}
+#right .conent .s {
+	width: 29px;
+	height: 29px;
+	background-position: -56px 0px;
+	position: absolute;
+	left: 17px;
+	top: 50px;
+}
+#right .conent .x {
+	width: 29px;
+	height: 29px;
+	background-position: -91px 0;
+	position: absolute;
+	right: 17px;
+	top: 50px;
+}
+#right .conent .ss {
+	width: 51px;
+	height: 51px;
+	background-position: 0px 1px;
+	position: absolute;
+	z-index: 2;
+	top: 14px;
+}
+#right .conent .tp1 {
+	width: 135px;
+	height: 130px;
+	position: absolute;
+	bottom: 25px;
+}
+#right .conent .tp2 {
+	right: 1px;
+}
+#right .bottom {
+	padding-top: 41px;
+	height: 185px;
+}
+#right .bottom .mttj {
+	display: inline-block;
+	padding: 5px 7px;
+	width: 275px;
+	background-position: -10px -491px;
+}
+#right .bottom .mttj span {
+	display: inline-block;
+	float: right;
+}
+
+.lb {
+    position: absolute;
+    left: 23px;
+    top: 30px;
+    height: 270px;
+    width: 560px;
+}
+
+.mid .img {
+    margin-top: 17px;
+}
+
+.mid .img ul {
+    overflow: hidden;
+}
